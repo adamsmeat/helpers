@@ -17,7 +17,8 @@
         ],
         "psr-0": {
             "Adamsmeat\\Helpers": "src/"
-        }
+        },
+        "files":["src/helpers.php"]
     },
     "minimum-stability": "dev"
 }

@@ -16,6 +16,8 @@ Route::get('helpers', function()
 		$helpers = App::make('helpers'),
 		$fuel_arr = App::make('helpers.fuel_arr'),
 		$fuel_arr->flatten($multi_dim_arr, '.'),
+		$helpers['markdown']->transform('#h1'),
+		$helpers['fuel_arr']->flatten(Config::get('app'), '.'),
 	));
 
 });

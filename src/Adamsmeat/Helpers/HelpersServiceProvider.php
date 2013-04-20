@@ -31,34 +31,11 @@ class HelpersServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->registerMain();
-		$this->registerFuel();
-	}
-
-	/*
-	 * Register main
-	 *
-	 */
-	protected function registerMain()
-	{
         $this->app['helpers'] = $this->app->share(function($app)
         {
 			return new Helpers();
         });	
 	}
-
-	/*
-	 * Register Fuel helpers
-	 *
-	 */
-	protected function registerFuel()
-	{
-        $this->app['helpers.fuel_arr'] = $this->app->share(function($app)
-        {
-			return new FuelArr();
-        });	
-	}	
-	 
 
 	/**
 	 * Get the services provided by the provider.

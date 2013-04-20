@@ -2,6 +2,14 @@
 
 Extensions for L4 helpers yet to be implemented in a composer package. A helper for its helpers.
 
+#### Info
+
+Helpers class extends Pimple. [git://github.com/fabpot/Pimple.git]
+
+The following shows subservices mapped to their key:
+
+- markdown: dflydev\markdown\MarkdownExtraParser
+
 #### Installation
 
 ```php
@@ -14,6 +22,10 @@ return array(
 );
 ?>
 ```
+
+#### Classes
+
+The following classes are included and used by default with the following keys
 
 #### Notes
 

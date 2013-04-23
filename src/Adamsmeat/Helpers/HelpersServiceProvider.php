@@ -33,7 +33,7 @@ class HelpersServiceProvider extends ServiceProvider {
 	{
         $this->app['helpers'] = $this->app->share(function($app)
         {
-			return new Helpers();
+			return new Helpers($app);
         });	
 	}
 

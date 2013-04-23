@@ -11,4 +11,11 @@ class HelpersFacade extends LaravelFacade {
 	 */
 	protected static function getFacadeAccessor() { return 'helpers'; }
 
+
+
+    public static function __callStatic($method, $args) {
+        // subhelper
+        if (empty($args))
+            return LaravelFacade::getFacadeApplication()->helpers->subhelper($method);
+    }
 }

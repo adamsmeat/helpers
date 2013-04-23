@@ -7,7 +7,7 @@ use Adamsmeat\Helpers\Fuel\Core\Arr;
 
 class Helpers extends Pimple {
 
-	public function __construct(array $values = array())
+	public function __construct($app, array $values = array())
 	{
         parent::__construct();
 
@@ -22,12 +22,17 @@ class Helpers extends Pimple {
         // allow override
         foreach ($values as $key => $value) {
             $this[$key] = $value;
-        }
+        }      
 	}
 
     public function subhelper($key)
     {
        return $this[$key];
-    }    
+    }
+
+    public function me()
+    {
+       return $this;
+    }
 
 }

@@ -14,7 +14,16 @@ $form = array(
 			),
 		),
 		'password',
-		'password_confirmation',	
+		'password_confirmation',
+		'group' => array(
+			'type' => 'select',
+			'attr'=> array(),
+			'options' => array(
+				'customer' => 'Customer', 
+				'registrar' => 'Business Registrar',
+				'contact' => 'Business Contact',
+			),
+		),			
 	),
 	'button' => array(
 		'submit' => array(

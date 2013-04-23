@@ -3,7 +3,7 @@
 // a template for forms
 
 $form = array(
-	'attr' => array('url' => 'registration', 'class' => 'form-horizontal'),
+	'attr' => array('class' => 'form-horizontal'),
 	'field' => array(
 		'username'  => array(
 			'attr'=> array('type' => 'text','placeholder' => 'username'),			

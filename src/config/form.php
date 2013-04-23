@@ -5,8 +5,17 @@
 $form = array(
 	'attr' => array('class' => 'form-horizontal'),
 	'field' => array(
-		'username'  => array(
-			'attr'=> array('type' => 'text','placeholder' => 'username'),			
+		'first_name'  => array(
+			'attr'=> array('type' => 'text','placeholder' => 'First Name'),			
+		),		
+		'last_name'  => array(
+			'attr'=> array('type' => 'text','placeholder' => 'Last Name'),			
+		),
+		'full_name'  => array(
+			'attr'=> array('type' => 'text','placeholder' => 'Full Name'),			
+		),						
+		'registration_ip'  => array(
+			'attr'=> array('type' => 'hidden','placeholder' => 'ip address'),			
 		),
 		'email' => array(
 			'attr'=> array(
@@ -30,7 +39,7 @@ $form = array(
 			'attr'=> array(
 				'class' => 'btn btn-primary',
 			),				
-		),					
+		),						
 	),
 
 

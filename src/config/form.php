@@ -22,7 +22,27 @@ $form = array(
 				'class' => 'btn btn-primary',
 			),				
 		),					
-	),		
+	),
+
+
+	// default rules
+	'rules' => array(
+	    'username' => array(
+	        'required', 
+	        'unique:users',
+	        'min:6'
+	    ),
+	    'email' => array(
+	        'required', 
+	        'email', 
+	        'unique:users'
+	    ),
+	    'password' => array(
+	        'required', 
+	        'confirmed',
+	        'min:8' 
+	    ),
+	),	
 );
 
 return $form;

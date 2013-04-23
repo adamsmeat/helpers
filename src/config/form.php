@@ -37,9 +37,8 @@ $form = array(
 	// default rules
 	'rules' => array(
 	    'username' => array(
-	        'required', 
-	        'unique:users',
-	        'min:6'
+	        'required',
+	        'min:6',
 	    ),
 	    'email' => array(
 	        'required', 
@@ -51,7 +50,17 @@ $form = array(
 	        'confirmed',
 	        'min:8' 
 	    ),
+	),
+
+	'rules_variants' => array(
+		'registration'=> array(
+		    'username' => array(
+		        'unique:users',
+		        'min:6',
+		    ),			
+		),
 	),	
+
 );
 
 return $form;

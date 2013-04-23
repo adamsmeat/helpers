@@ -25,4 +25,9 @@ class Helpers extends Pimple {
         }
 	}
 
+    public function subhelper($key)
+    {
+       return $this[$key];
+    }    
+
 }
